@@ -225,7 +225,8 @@ body {
 }
 
 .hero-button,
-.filt-btn {
+.filt-btn,
+.modal-button {
   padding: 16px 32px;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -242,6 +243,8 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus,
+.modal-button:hover,
+.modal-button:focus,
 .contact-link:focus {
   background-color: #404bbf;
 }
@@ -672,6 +675,13 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
   border-radius: 4px;
+  padding: 24px;
+
+  font-family: var(--primary-font);
+  color: var(--primary-fontcolor);
+  font-size: var(--primary-fontsize);
+  line-height: var(--primary-lineweight);
+  font-weight: var(--primary-fontweight);
 }
 
 .backdrop.is-hidden .modal {
@@ -719,4 +729,29 @@ body {
 .icon-modal-btn:hover,
 .icon-modal-btn:focus {
   fill: #ffffff;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-label {
+  display: flex;
+  flex-direction: column;
+}
+.modal-title {
+  margin-top: 48px;
+}
+.modal-text {
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.modal-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
