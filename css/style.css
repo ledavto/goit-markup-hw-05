@@ -40,6 +40,10 @@ img {
   display: block;
 }
 
+input {
+  font-family: inherit;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -241,6 +245,7 @@ body {
   color: #ffffff;
   cursor: pointer;
 }
+
 .hero-button:hover,
 .hero-button:focus,
 .modal-button:hover,
@@ -521,6 +526,80 @@ body {
   margin-right: 120px;
 }
 
+.label-subscribe {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--footer-color);
+  margin-bottom: 16px;
+  /* display: flex;
+  flex-direction: column; */
+}
+.footer-subscribe {
+  display: inline-block;
+  flex-direction: row;
+
+  margin-left: 80px;
+}
+.subscribe-text {
+  margin-bottom: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--footer-color);
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.input-subscribe {
+  padding-left: 16px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  margin-bottom: 16px;
+
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: var(--footer-color);
+  border-radius: 4px;
+}
+
+.input-subscribe::placeholder {
+  color: var(--footer-color);
+}
+
+.button-subscribe {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.icon-subscribe {
+  margin-left: 16px;
+  fill: var(--btnBGcolor);
+}
+
 /* PORFOLIO */
 .filter-section {
   padding-top: 96px;
@@ -752,7 +831,7 @@ body {
 
 .modal-text:placeholder-shown {
   /* position: relative; */
-  border: 1px solid #4D5AE5;
+  border: 1px solid #4d5ae5;
 }
 
 .modal-button {
@@ -765,7 +844,7 @@ body {
 .icon-modal::after {
   content: "";
   position: absolute;
- /* height: 4px;
+  /* height: 4px;
   width: 100%;
    background: #404bbf;
   border-radius: 2px; */
