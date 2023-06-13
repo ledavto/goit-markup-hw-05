@@ -450,10 +450,10 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="form-modal">
           <div class="form-items">
-            <label class="modal-label name" for="user-name"> Name</label>
+            <label class="modal-label" for="user-name"> Name</label>
             <div class="container-input-svg">
               <input
-                class="modal-text name"
+                class="modal-text"
                 id="user-name"
                 type="text"
                 name="user-name"
@@ -464,10 +464,10 @@
             </div>
           </div>
           <div class="form-items">
-            <label class="modal-label phone" for="user-phone"> Phone</label>
+            <label class="modal-label" for="user-phone"> Phone</label>
             <div class="container-input-svg">
               <input
-                class="modal-text phone"
+                class="modal-text"
                 type="tel"
                 id="user-phone"
                 height="40"
@@ -479,10 +479,10 @@
             </div>
           </div>
           <div class="form-items">
-            <label class="modal-label email" for="user-email">Email</label>
+            <label class="modal-label" for="user-email">Email</label>
             <div class="container-input-svg">
               <input
-                class="modal-text email"
+                class="modal-text"
                 type="email"
                 id="user-email"
                 height="40"
@@ -494,38 +494,34 @@
             </div>
           </div>
           <div class="form-items">
-            <label class="modal-label comment" for="user-comment"
-              >Comment</label
-            >
-            <div class="">
-              <textarea
-                class="modal-text-comment"
-                id="user-comment"
-                height="40"
-                name="user-comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-            <div class="form-items">
-              <input
-                class="modal-checkbox visually-hidden"
-                type="checkbox"
-                name=""
-                id="user-privacy"
-                name="user-privacy"
-                value="true"
-              />
-              <label class="modal-label checkbox" for="user-privacy">
-                I accept the terms and conditions of the
-                <span class="privacy-text">
-                  <svg class="icon-modal" height="8" width="10">
-                    <use href="./images/icons.svg#icon-email"></use>
-                  </svg>
-                  <a href="">Privacy Policy</a>
-                </span>
-              </label>
-            </div>
+            <label class="modal-label" for="user-comment">Comment</label>
+
+            <textarea
+              class="modal-text-comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
+
+          <div class="form-items">
+            <input
+              class="modal-checkbox visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="modal-label" for="user-privacy">
+              I accept the terms and conditions of the
+              <span class="privacy-text">
+                <svg class="icon-modal" height="8" width="10">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg> </span
+              ><a class="privacy link" href="">Privacy Policy</a>
+            </label>
+          </div>
+
           <button class="modal-button" type="submit">
             <span class="modal-btn-txt">Send</span>
           </button>
